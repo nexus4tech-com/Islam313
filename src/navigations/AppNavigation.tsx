@@ -1,12 +1,14 @@
-import React from 'react';
-import AuthNavigation from './AuthNavigation.tsx';
+import {createNativeStackNavigator} from 'react-native-screens/native-stack';
+import OnBoarding from '../screens/onboarding/onBoarding.tsx';
 
+const Stack = createNativeStackNavigator();
 
-const AppNavigation = () => {
-
+const AppNavigations = () => {
   return (
-  <AuthNavigation/>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Onboarding" component={OnBoarding} />
+      </Stack.Navigator>
   );
 };
 
-export default AppNavigation;
+export default AppNavigations;
