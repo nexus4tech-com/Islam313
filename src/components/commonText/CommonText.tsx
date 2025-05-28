@@ -24,7 +24,8 @@ export default CommonText;
 const createStyles = (theme: Theme) =>
   StyleSheet.create({
     textContainer: {
-      alignSelf: 'center',
+        justifyContent:'center',
+        alignItems: 'center',
     },
     text: {
       fontSize: theme.spacing.LG,
