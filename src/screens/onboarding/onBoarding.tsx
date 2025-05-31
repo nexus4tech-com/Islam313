@@ -1,7 +1,6 @@
 import React, {useRef, useState} from 'react';
 import {
   FlatList,
-  SafeAreaView,
   StyleSheet,
   View,
 } from 'react-native';
@@ -40,11 +39,10 @@ const OnBoarding = () => {
   };
 
   return (
-    <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <OnboardingHeader
           onSkip={handleSkip}
-          showSkip={currentIndex < onboardingData.length - 1}
+          showSkip={true}
         />
 
         <FlatList
@@ -54,7 +52,7 @@ const OnBoarding = () => {
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}
-          keyExtractor={(item, index) => index.toString()}
+          keyExtractor={(index) => index.toString()}
           onMomentumScrollEnd={e => {
             const index = Math.round(
                 e.nativeEvent.contentOffset.x / SCREEN_WIDTH,
@@ -78,8 +76,8 @@ const OnBoarding = () => {
           <FullButton
             labelKey={
               currentIndex === onboardingData.length - 1
-                ? 'Get Started'
-                : 'Next'
+                ? 'Enable Location'
+                : 'Continue'
             }
             onPress={handleNext}
           />
@@ -89,18 +87,14 @@ const OnBoarding = () => {
           />
         </View>
       </View>
-    </SafeAreaView>
   );
 };
 
 const createStyles = (theme: Theme) =>
     StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
   container: {
     flex: 1,
+    backgroundColor: '#FAF3E0',
   },
   slide: {
     width: SCREEN_WIDTH,

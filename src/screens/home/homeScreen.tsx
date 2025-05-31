@@ -4,26 +4,36 @@ import {useCustomTheme} from '../../hooks/theme/useCustomThemeHook';
 import {makeStyles} from '../../utils/theme/themeMakeStyle';
 import {Theme} from '../../types/theme/themesTypes';
 import Header from '../../components/Headers/Header';
-import HeaderLeft from '../../components/Headers/HeaderLeft';
-import HeaderRight from '../../components/Headers/HeaderRight';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import {useRoute} from '@react-navigation/native';
+import {SCREEN_NAMES} from '../../constants/screenNamesConstants.ts';
 
 const HomeScreen = () => {
   const {theme} = useCustomTheme();
   const styles = React.useMemo(() => makeStyles(createStyles, theme), [theme]);
+  const route = useRoute();
+
+  const isHomeScreen = route.name === SCREEN_NAMES.HOME_SCREEN;
 
   return (
     <>
       <Header
+        onLeftPress={()=>{}}
+        onRightPress={()=>{}}
         leftContent={
-          <HeaderLeft>
-            <Text style={styles.text}>Back</Text>
-          </HeaderLeft>
+          <Icon
+            name={isHomeScreen ? 'menu' : 'arrow-back'}
+            size={24}
+            color={theme.colors.secondary}
+          />
         }
         centerContent={<Text style={styles.title}>Dashboard</Text>}
         rightContent={
-          <HeaderRight>
-            <Text style={styles.text}>Right content</Text>
-          </HeaderRight>
+          <Icon
+            name="notifications"
+            size={24}
+            color={theme.colors.secondary}
+          />
         }
       />
     </>

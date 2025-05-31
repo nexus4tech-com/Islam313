@@ -22,3 +22,24 @@
 
 ## [2025-05-28] - created Windows Service For screen width and height under services
 
+## [2025-06-01] - created Dynamic card component for cards accross app having dynamic width height and on press etc...
+# you can find it under `src/components/cards/DynamicCard` 
+
+you can use it like this 
+
+<DynamicCard
+
+width={300}
+height="auto"
+backgroundColor="#F8F9FA"
+borderRadius={16}
+borderColor="#E9ECEF"
+borderWidth={2}
+onPress={() => console.log('Card pressed')} >
+
+< Text style={styles.title}>Dynamic Card < /Text>
+
+< Text>Content that automatically sizes the card < /Text>
+
+< /DynamicCard>
+

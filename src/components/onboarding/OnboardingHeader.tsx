@@ -6,7 +6,7 @@ import { Theme } from '../../types/theme/themesTypes';
 
 type OnboardingHeaderProps = {
     onSkip: () => void;
-    showSkip: boolean;
+    showSkip?: boolean;
 };
 
 const OnboardingHeader = ({ onSkip , showSkip = true }: OnboardingHeaderProps) => {
@@ -38,6 +38,7 @@ const createStyles = (theme: Theme) =>
             justifyContent: 'space-between',
             alignItems: 'center',
             padding: theme.spacing.MD,
+            marginTop: 50,
         },
         logoContainer: {
             flexDirection: 'row',
@@ -51,7 +52,7 @@ const createStyles = (theme: Theme) =>
         appName: {
             fontSize: theme.spacing.LG,
             fontWeight: 'bold',
-            color: theme.colors.primary,
+            color: theme.colors.onSecondary,
         },
         skipText: {
             color: theme.colors.onSecondary,

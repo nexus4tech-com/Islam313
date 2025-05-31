@@ -29,12 +29,13 @@ const createStyles = (theme: Theme) =>
     },
     text: {
       fontSize: theme.spacing.LG,
-      textAlign: 'center',
-      color: theme.colors.primary,
+      textAlign: 'left',
+      color: theme.colors.onSecondary,
+      paddingTop: theme.spacing.LG,
     },
     heading: {
       fontSize: theme.spacing.XL,
       textAlign: 'center',
-      color: theme.colors.primary,
+      color: theme.colors.onSecondary,
     },
   });
