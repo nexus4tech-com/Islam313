@@ -1,7 +1,20 @@
 export const COLORS = {
+
+  HEADER_COLOR: '#2E5266',
+  BUTTON_COLOR: '#52796F',
+  BORDER_COLOR: '#B8E6B8',
+  PURE_WHITE: '#FDFEFE',
+  LIGHT_GRAY: '#F8F9FA',
+  SOFT_GRAY: '#E9ECEF',
+  TEXT_COLOR: '#2C3E50',
+  MEDIUM_GRAY: '#495057',
+  LIGHT_GRAY_TEXT: '#6C757D',
+  SUCCESS_GREEN: '#28A745',
+  WARNING_GOLD: '#FFC107',
+
   // TEAL
 
-  TEAL: '#008080',
+  TEAL: '#075E54',
   TEAL_50: '#B2D8D8', // Very light teal
   TEAL_100: '#80C4C4', // Lighter teal
   TEAL_200: '#4DAAAA', // Light teal
@@ -22,7 +35,7 @@ export const COLORS = {
   DARK_GRAY_400: '#5A5A5A', // Slightly darker gray
   DARK_GRAY_500: '#3A3A3A', // Mid-tone gray
   DARK_GRAY_600: '#2A2A2A', // Richer gray
-  DARK_GRAY_700: '#383838', // Deep gray
+  DARK_GRAY_700: '#1A2A2B', // Deep gray
   DARK_GRAY_800: '#161616', // Very dark gray
   DARK_GRAY_900: '#121212', // Base dark gray (Primary)
   DARK_GRAYISH: '#111111',
@@ -37,14 +50,14 @@ export const COLORS = {
   LIGHT_GRAY_700: '#B3BBC0', // Deeper light gray
   LIGHT_GRAY_800: '#99A2A8', // Darker light gray
   LIGHT_GRAY_900: '#7F8A91', // Deepest light gray
-  LIGHT_GRAY: '#E9EAEC',
+  // LIGHT_GRAY: '#E9EAEC',
   // PURE WHITE
   PURE_WHITE_50: '#FFFFFF', // Pure white (Base)
   PURE_WHITE_100: '#F9F9F9', // Soft white
   PURE_WHITE_200: '#F3F3F3', // Slightly muted white
   PURE_WHITE_300: '#ECECEC', // Subtle greyish white
   PURE_WHITE_400: '#E5E5E5', // Gentle light grey
-  PURE_WHITE_500: '#DCDCDC', // Light neutral grey
+  PURE_WHITE_500: '#FAF3E0', // half white
   PURE_WHITE_600: '#CFCFCF', // Softer grey
   PURE_WHITE_700: '#BFBFBF', // Medium grey tone
   PURE_WHITE_800: '#A8A8A8', // Darker greyish white
@@ -86,7 +99,7 @@ export const COLORS = {
   AMBER_600: '#FFB300',
   AMBER_700: '#FFA000',
   AMBER_800: '#FF8F00',
-  AMBER_900: '#FF6F00', // Darkest Amber
+  AMBER_900: '#D1593F', // orange
 
   // TRANSPARENT
   TRANSPARENT: '#00000000',

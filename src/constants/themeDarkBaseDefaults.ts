@@ -5,7 +5,7 @@ import {getDefaultLayoutSpacing} from './themeLayoutSpacingDefault.ts';
 
 export const DARK_THEME_BASE = (scale: number = 1) => ({
   colors: {
-    primary: COLORS.TEAL_GRAYISH,
+    primary: COLORS.DARK_GRAY_700,
     onPrimary: COLORS.PURE_WHITE_50,
     primaryVariant: COLORS.DARK_GRAY_900,
 

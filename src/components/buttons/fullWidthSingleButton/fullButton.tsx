@@ -39,7 +39,7 @@ const createStyles = (theme: Theme) =>
     StyleSheet.create({
         container: {
             backgroundColor: COLORS.TEAL_200,
-          marginHorizontal: theme.spacing.LG,
+            marginHorizontal: theme.spacing.LG,
             borderRadius: 9,
             marginVertical: theme.spacing.XL,
             height: theme.spacing.XXL * 2,
