@@ -6,6 +6,8 @@
 
 ---
 
+- hassan using iphone 15 pro max 17.2 for islam 313
+
 ## [2025-05-28] - created Reusable components
 **Author:** Hamza Sarwar
 - Created `Full Button` for full screen button you just need to pass it label key or style if you want and onPress and boom it will give you a give a consistent button throughout the app.

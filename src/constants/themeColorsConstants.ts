@@ -86,6 +86,7 @@ export const COLORS = {
   VIVID_GREEN_700: '#007633', // Deep vivid green
   VIVID_GREEN_800: '#005F2A', // Dark vivid green
   VIVID_GREEN_900: '#004920', // Deepest vivid green
+  VIVID_GREEN_950: '#154719', // Richest vivid green
   FOREST_GREEN: '#006032', //Forest Green
   BRIGHT_GREEN: '#04E762',
 
